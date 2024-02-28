@@ -1,0 +1,50 @@
+<?php
+
+return [
+
+    'home' => 'Home',
+    'contact' => 'Contact Us',
+    'business' => 'Business Consulting',
+    'itservices' => 'IT Services',
+    'company' => 'Company',
+    'product' => 'Product',
+    'portfolio' => 'Portfolio',
+    'services' => 'Services',
+    'aboutUs' => 'About Us',
+    'partners' => 'Partners',
+    'careers' => 'Careers',
+    'events' => 'Events',
+    'team' => 'Team',
+    'overview' => 'Overview',
+    'pricing' => 'Pricing',
+    'blog' => 'Blog',
+    'features' => 'Features',
+    'caseStudies' => 'Case Studies',
+    'newRelease' => 'New Release',
+    'solutions' => 'Solutions',
+    'looking' => 'Looking for new career?',
+    'hiring' => "We're hiring",
+    'solutionIn' => "Solution in you're hand",
+    'develop' => "Develop IT solutions based on the",
+    'analysis' => "analysis phase",
+    'viewMore' => "View more",
+    'callUs' => "Call Us",
+    'contactUs' => "Contact Us",
+    'weProvide' => "We provide the expertise and support to",
+    'propel' => "propel your business forward.",
+    'enterEmail' => "Enter Your Email Address",
+    'getStarted' => "Get Started",
+    'letsStarted' => "Let’s get started on something great",
+    'ourITExpert' => "Our team of IT experts looks forward to meeting with you",
+    'providing' => "and providing valuable insights tailored to your business.",
+    'getAppointment' => "Get an appointment now",
+    'responseTime' => "Response Time",
+    'clientSatisfaction' => "Client Satisfaction",
+    'fieldExperience' => "Field Experience",
+    'mins' => "Mins",
+    'year' => "Years",
+
+    'phone' => "Phone"
+
+
+];

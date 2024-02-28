@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Domains\Logic\Http\Requests\Frontend\User;
+
+/**
+ * Class AccountController.
+ */
+class AccountController
+{
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function index()
+    {
+        return view('frontend.user.account');
+    }
+}

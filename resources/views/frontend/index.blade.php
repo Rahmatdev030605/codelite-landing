@@ -1,0 +1,20 @@
+@extends('frontend.layouts.app')
+
+@section('title', __('We Create Software That Transform Companies'))
+
+@section('content')
+@include('frontend.includes.headerbar')
+@include('frontend.includes.header')
+@include('frontend.includes.home.itservice.hero')
+@include('frontend.includes.client.client')
+@include('frontend.includes.home.itservice.howwedo')
+@include('frontend.includes.servicearea.serviceAreaWhite')
+@include('frontend.includes.casestudies.caseStudioWhite')
+@include('frontend.includes.aboutsection.aboutSection')
+@include('frontend.includes.testimonial.testimonial')
+@include('frontend.includes.home.itservice.project')
+@include('frontend.includes.home.itservice.news')
+@include('frontend.includes.featuresection.featureSection')
+@include('frontend.includes.contact')
+@include('frontend.includes.footer')
+@endsection

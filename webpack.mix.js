@@ -1,0 +1,54 @@
+const mix = require("laravel-mix");
+
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
+
+mix.setPublicPath("public")
+    .setResourceRoot("../") // Turns assets paths in css relative to css file
+    .vue()
+    .sass("resources/sass/frontend/app.scss", "css/frontend.css")
+    .sass("resources/sass/backend/app.scss", "css/backend.css")
+
+    .js("resources/js/frontend/app.js", "js/frontend.js")
+    .js("resources/js/backend/app.js", "js/backend.js")
+    .extract([
+        "alpinejs",
+        "jquery",
+        "bootstrap",
+        "popper.js",
+        "axios",
+        "sweetalert2",
+        "lodash",
+    ])
+    .sourceMaps();
+
+mix.copy(
+    [
+        "resources/css/bootstrap.min.css",
+        "resources/css/jsvectormap.css",
+        "resources/css/responsive.css",
+        "resources/css/style.css",
+        "resources/css/swiper-bundle.min.css",
+    ],
+    "public/css"
+);
+
+mix.copyDirectory("resources/js/frontend/jqueryFrameworks/**", "public/js");
+mix.copyDirectory("resources/imgs/**", "public/img/imgs");
+
+if (mix.inProduction()) {
+    mix.version();
+} else {
+    // Uses inline source-maps on development
+    mix.webpackConfig({
+        devtool: "inline-source-map",
+    });
+}
